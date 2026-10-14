@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" data-version="v1.0 · 2026-10-14 11:19">
+<html lang="ko" data-version="v1.0 · 2026-10-14 13:02">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1297,7 +1297,7 @@ body.light .uix .x-qbtn.ghost{color:var(--gold);}
   <div class="flow">
     <div class="flow-step"><div class="ic">📁</div><b>재료</b><small>대학원생 한 명의<br>이력·작품 렌더</small></div>
     <div class="flow-arrow">→</div>
-    <div class="flow-step on"><div class="ic">💬</div><b>한 줄 주문 4번</b><small>Antigravity IDE에<br>우리말로 입력</small></div>
+    <div class="flow-step on"><div class="ic">💬</div><b>주요 주문 4단계</b><small>계획을 먼저 확인하고<br>우리말로 진행</small></div>
     <div class="flow-arrow">→</div>
     <div class="flow-step"><div class="ic">🏛</div><b>렌더 히어로</b><small>끌어서 낮 ↔ 해 질 녘<br>비교하는 첫 화면</small></div>
     <div class="flow-arrow">→</div>
@@ -1309,10 +1309,11 @@ body.light .uix .x-qbtn.ghost{color:var(--gold);}
 <section class="slide" data-part="p0" data-title="주문 1 · 페이지 만들기">
   <div class="slide-label">주문 1 / 4 · 약 10분</div>
   <h2 class="slide-title">주문 1 · <span class="gold">페이지 만들기</span></h2>
-  <div class="code prompt" data-lang="Antigravity에 붙여 넣는 주문"><pre>자료 폴더와 DESIGN.md를 읽고, 건축사무소 홈페이지 수준의 내 포트폴리오 랜딩페이지를 만들어줘.</pre></div>
+  <div class="code prompt" data-lang="Antigravity에 붙여 넣는 주문"><pre>DESIGN.md를 읽고, 자료 폴더의 렌더·영감 사진과 이력_논문_수상_작품.md를 참고해서
+건축 포트폴리오 랜딩페이지를 만들어줘. PC와 휴대폰에 맞게 만들고, 먼저 구현 계획부터 말해줘.</pre></div>
   <div class="split" style="align-items:start">
     <div class="card"><h3>📁 폴더에 든 것</h3><p><b>DESIGN.md</b> · 디자인 지침서 (색 · 글꼴 · 배치 · 움직임)<br><b>자료</b> · 소개 글, 작품 렌더 5장, 영감을 준 건축 사진 6장</p></div>
-    <div class="card gold"><h3>주문은 짧게</h3><p>좋은 결과는 긴 주문이 아니라 <b>좋은 재료</b>와 <b>디자인 지침서</b>에서 나옵니다. 다음 주에는 여러분도 이 두 가지를 가져옵니다.</p></div>
+    <div class="card gold"><h3>계획부터 확인</h3><p>AI가 말한 계획을 검토한 뒤 <b>“계획대로 진행해줘.”</b>라고 합니다. 좋은 결과는 <b>좋은 재료</b>와 <b>디자인 지침서</b>에서 나옵니다.</p></div>
   </div>
 </section>
 
@@ -3643,6 +3644,7 @@ AI가 만든 내용은 제가 직접 확인하고 고쳤으며, 최종 판단과
     <div class="term ps"><div class="term-bar">폴더 구조</div><pre><span class="y">C:\ai-class\my-landing\</span>      <span class="dim">(맥: ~/ai-class/my-landing/)</span>
 ├─ DESIGN.md          <span class="dim">← 디자인 지침서</span>
 ├─ 소개.txt            <span class="dim">← 자기소개 · 섹션 메모</span>
+├─ reference\         <span class="dim">← 참고 화면 캡처 (선택)</span>
 ├─ images\
 │   ├─ profile.jpg     <span class="dim">← 프로필 사진</span>
 │   ├─ work01.jpg      <span class="dim">← 작품 사진 5~10장</span>
@@ -3677,16 +3679,17 @@ AI가 만든 내용은 제가 직접 확인하고 고쳤으며, 최종 판단과
   </div>
 </section>
 
-<section class="slide" data-part="p9" data-title="방법 A · 모음 사이트에서 받기">
+<section class="slide" data-part="p9" data-title="방법 A · 완성된 DESIGN.md 받기">
   <div class="slide-label">GET DESIGN.md · 방법 A</div>
-  <h2 class="slide-title">방법 A · <span class="gold">getdesign.md</span>에서 받기</h2>
+  <h2 class="slide-title">방법 A · 완성된 <span class="gold">DESIGN.md</span> 받기</h2>
   <div class="split">
     <div class="stack">
       <ol class="steps">
-        <li><span class="inline-cmd">getdesign.md</span> 에서 마음에 드는 사이트를 고릅니다</li>
-        <li>상세 화면의 <b>DESIGN.md 내려받기</b> 버튼 → my-landing 폴더에 저장</li>
+        <li><span class="inline-cmd">designmd.app</span> 또는 <span class="inline-cmd">getdesign.md</span>에서 마음에 드는 디자인을 고릅니다</li>
+        <li>상세 화면에서 <b>DESIGN.md를 내려받거나 복사</b>합니다</li>
+        <li>파일 이름을 <b>DESIGN.md</b>로 확인하고 my-landing 폴더에 넣습니다</li>
       </ol>
-      <p class="sub">또는 명령 한 줄:</p>
+      <p class="sub">getdesign.md는 명령으로도 받을 수 있습니다:</p>
       <div class="code" data-lang="윈도우 기준 · 맥은 .cmd만 빼기 (my-landing 폴더에서)"><pre>npx.cmd -y getdesign@latest add notion</pre></div>
       <p class="sub">맥에서는 첫 낱말을 <span class="inline-cmd">npx</span>로 입력합니다.</p>
     </div>
@@ -3694,38 +3697,38 @@ AI가 만든 내용은 제가 직접 확인하고 고쳤으며, 최종 판단과
   </div>
 </section>
 
-<section class="slide" data-part="p9" data-title="건축 포트폴리오에 어울리는 추천">
-  <div class="slide-label">RECOMMEND</div>
-  <h2 class="slide-title">건축 포트폴리오에 <span class="gold">어울리는</span> 디자인</h2>
-  <div class="grid-4">
-    <div class="card"><h4>노션</h4><p class="sub">따뜻한 미니멀, 명조 제목. 글이 많은 소개에 좋음</p></div>
-    <div class="card"><h4>애플</h4><p class="sub">넓은 여백, 큰 사진. 작품 한 장 한 장을 크게</p></div>
-    <div class="card"><h4>테슬라</h4><p class="sub">사진이 화면을 꽉 채움. 렌더링 이미지가 강할 때</p></div>
-    <div class="card"><h4>WIRED</h4><p class="sub">잡지 같은 편집. 글과 사진을 섞어 보여 줄 때</p></div>
+<section class="slide" data-part="p9" data-title="디자인 참고 사이트 세 곳">
+  <div class="slide-label">REFERENCE SITES</div>
+  <h2 class="slide-title">어디서 <span class="gold">무엇을</span> 찾나요?</h2>
+  <div class="grid-3">
+    <div class="card gold"><span class="tag">DESIGN.md 받기</span><h3>designmd.app</h3><p>여러 스타일의 완성된 DESIGN.md를 고르고 내려받아 내 폴더에 넣습니다.</p></div>
+    <div class="card"><span class="tag green">DESIGN.md 받기</span><h3>getdesign.md</h3><p>유명 사이트의 색·글꼴·간격·구성 규칙을 정리한 DESIGN.md를 찾습니다.</p></div>
+    <div class="card"><span class="tag">화면 참고</span><h3>Mobbin</h3><p>웹·앱 화면을 찾아봅니다. 마음에 드는 화면을 캡처해 참고자료로 씁니다.</p></div>
   </div>
-  <p class="footnote">목록은 바뀔 수 있습니다. 사이트에서 직접 보고 고르세요. 디자인 "규칙"을 빌리는 것이지, 그 회사 로고나 글을 쓰는 것이 아닙니다.</p>
+  <p class="footnote">Mobbin은 DESIGN.md를 직접 받는 곳이 아닙니다. 디자인의 분위기와 화면 구성을 찾는 참고 사이트입니다.</p>
 </section>
 
 <section class="slide" data-part="p9" data-title="방법 B · 내가 고른 사이트로 만들기">
   <div class="slide-label">GET DESIGN.md · 방법 B</div>
   <h2 class="slide-title">방법 B · 내가 고른 사이트로 <span class="gold">직접 만들기</span></h2>
   <ol class="steps">
-    <li>마음에 드는 사이트 화면을 3장 캡처합니다 (윈도우 <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> · 맥 <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd>)</li>
-    <li>채팅 AI에 캡처 3장을 올리고 아래 문장을 붙여 넣습니다</li>
-    <li>결과를 메모장에 붙여 <b>DESIGN.md</b>로 저장합니다</li>
+    <li>Mobbin이나 마음에 드는 사이트에서 <b>같은 분위기의 화면 3~5장</b>을 캡처합니다</li>
+    <li>캡처를 채팅 AI에 올려 DESIGN.md를 만들거나, <span class="inline-cmd">reference</span> 폴더에 넣고 코딩 AI에게 참고하라고 말합니다</li>
+    <li>로고·문구·사진은 복사하지 않고 <b>색·글꼴 느낌·여백·배치 규칙</b>만 참고합니다</li>
   </ol>
-  <div class="code prompt" data-lang="채팅 AI에 붙여 넣는 주문"><pre>첨부한 화면 3장의 디자인을 분석해서 DESIGN.md 형식으로 정리해줘.
+  <div class="code prompt" data-lang="채팅 AI에 붙여 넣는 주문"><pre>첨부한 같은 사이트의 화면 3~5장을 분석해서 DESIGN.md 형식으로 정리해줘.
 색(배경·글자·강조색 코드), 글꼴 느낌, 글자 크기, 여백, 버튼 모양, 사진 배치 규칙을 항목별로 적어줘.
-나는 건축 전공 학생이고, 이 규칙으로 내 포트폴리오 랜딩페이지를 만들 거야.</pre></div>
+원본의 로고·문구·사진은 복사하지 말고, 나는 이 규칙으로 내 건축 포트폴리오 랜딩페이지를 만들 거야.</pre></div>
 </section>
 
-<section class="slide" data-part="p9" data-title="방법 C · 건축 포트폴리오 예시 지침서">
+<section class="slide" data-part="p9" data-title="방법 C · 강사 샘플 DESIGN.md 사용">
   <div class="slide-label">GET DESIGN.md · 방법 C</div>
-  <h2 class="slide-title">방법 C · <span class="gold">건축 포트폴리오 예시 지침서</span> 쓰기</h2>
+  <h2 class="slide-title">방법 C · <span class="gold">강사 샘플 DESIGN.md</span>로 시작</h2>
   <div class="split" style="align-items:start">
     <div class="stack">
       <ol class="steps">
-        <li>실습 자료의 <span class="inline-cmd">DESIGN_건축포트폴리오</span> 폴더에서 <b>DESIGN.md</b>를 my-landing 폴더로 복사합니다</li>
+        <li>강사가 샘플 랜딩페이지를 먼저 구상해 정리한 <b>DESIGN.md</b>입니다</li>
+        <li>실습 자료의 <span class="inline-cmd">DESIGN_건축포트폴리오</span> 폴더에서 my-landing 폴더로 복사합니다</li>
         <li>강조색을 바꾸고 싶으면 AI에게 한 줄로 말합니다</li>
       </ol>
       <div class="code prompt" data-lang="AI에게 붙여 넣는 주문 (예시)"><pre>DESIGN.md의 강조색을 짙은 초록(#2F4A3A)으로 바꿔줘.</pre></div>
